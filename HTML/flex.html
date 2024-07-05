@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox model</title>
+    <style>
+        .parent{
+            display: flex;
+            height: 550px;
+            width: 700px;
+            border: 2px solid grey;
+            
+            flex-direction: column;
+       
+            justify-content: space-evenly;
+              
+             
+            
+            
+            
+        }
+         .child{
+            height: 100px;
+            width: 100px;
+        } 
+        #c1{
+            background-color: red;
+           
+             flex-shrink: 10;
+             /* align-self: flex-end; */
+        }
+        #c2{
+            background-color: green;
+            flex-shrink: 10;
+            /* align-self: center; */
+            
+            
+        }
+        #c3{
+            background-color: yellow;
+            
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="c1" class="child">one</div>
+        <div id="c2" class="child">two</div>
+        <div id="c3" class="child">three</div>
+          <!-- <div id="c1" class="child">one</div>
+        <div id="c2" class="child">two</div>
+        <div id="c3" class="child">three</div>
+         <div id="c1" class="child">one</div>
+        <div id="c2" class="child">two</div>
+        <div id="c3" class="child">three</div>
+         <div id="c1" class="child">one</div>
+        <div id="c2" class="child">two</div>
+        <div id="c3" class="child">three</div> 
+          -->
+         
+        
+    </div>
+</body>
+</html>
