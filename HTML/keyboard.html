@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
+    
 
 .keyboard {
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    padding: 10px;
+    padding: 15px;
+    height: 320px;
+    width: 800px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
 }
 
 .row {
@@ -28,19 +24,68 @@
 }
 
 .key {
-    width: 40px;
+    width: 50px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     margin: 5px;
+    
     border: 1px solid #cccccc;
     border-radius: 3px;
     background-color: #f0f0f0;
 }
 
 .key:hover {
-    background-color: #e0e0e0;
+    background-color: #c32828;
     cursor: pointer;
+}
+.row1{
+    display: flex;
+    
+}
+.key1{
+    
+    height: 20px;
+    margin-top: 5px;
+}
+.key2{
+   
+    height: 40px;
+    width: 350px;
+    margin-top: 5px;
+}
+#sp{
+    width: 250px;
+    height: 40px;
+}
+#back{
+    height: 40px;
+}
+#home{
+    width: 40px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: ;
+    
+}
+#home1{
+    height: 20px;
+}
+#home2{
+    height: 20px;
+    margin-top: 26px;
+    margin-left: -45px;
+}
+#home3{
+    height: 20px;
+    margin-top: 26px;
+
+}
+#home4{
+    height: 20px;
+    margin-top: 26px;
+margin-left: 5px;
+
 }
 
 
@@ -51,7 +96,51 @@
 </head>
 <body>
     <div class="keyboard">
+        <div class="row1">
+            
+            <div class="key">ESC</div>
+            <div class="key">F1</div>
+            <div class="key">F2</div>
+            <div class="key">F3</div>
+            <div class="key">F4</div>
+            <div class="key">F5</div>
+            <div class="key">F6</div>
+            <div class="key">F7</div>
+            <div class="key">F8</div>
+            <div class="key">F9</div>
+            <div class="key">F10</div>
+            <div class="key">F11</div>
+            <div class="key">F12</div>
+            <div class="key">prtsc</div>
+            <div class="key">Insert</div>
+            <div class="key">Delete</div>
+            <div class="key">*</div>
+            <div class="key">/</div>
+            <div class="key">power</div>
+
+        </div>
         <div class="row">
+            <div class="key">~</div>
+            
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+            <div class="key">-</div>
+            <div class="key">+</div>
+            <div class="key1"><button id="back">backspace</button></div>
+            <div class="key">+</div>
+            <div class="key">-</div>
+            <div class="key">numlk</div>
+        </div>
+        <div class="row">
+            <div class="key">Tab</div>
             <div class="key">Q</div>
             <div class="key">W</div>
             <div class="key">E</div>
@@ -62,8 +151,16 @@
             <div class="key">I</div>
             <div class="key">O</div>
             <div class="key">P</div>
+            <div class="key">[</div>
+            <div class="key">]</div>
+            <div class="key">\</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            
         </div>
         <div class="row">
+            <div class="key">capslok</div>
             <div class="key">A</div>
             <div class="key">S</div>
             <div class="key">D</div>
@@ -73,6 +170,12 @@
             <div class="key">J</div>
             <div class="key">K</div>
             <div class="key">L</div>
+            <div class="key">;</div>
+            <div class="key">"</div>
+            <div class="key">Enter</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
         </div>
         <div class="row">
             <div class="key">Shift</div>
@@ -83,6 +186,30 @@
             <div class="key">B</div>
             <div class="key">N</div>
             <div class="key">M</div>
+            <div class="key"><</div>
+            <div class="key">></div>
+            <div class="key">/</div>
+            <div class="key">shift</div>
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+        </div>
+        <div class="row">
+            <div class="key">ctrl</div>
+            <div class="key">fn</div>
+            <div class="key">win</div>
+            <div class="key">alt</div>
+            <div class="key2"><button id="sp">space</button></div>
+            <div class="key">alt</div>
+            <div class="key">ctrl</div>
+            <button id="home3">home</button>
+            <button id="home1">Pgup</button>
+            <button id="home2">PgDn</button>
+            <button id="home4">End</button>
+            <div class="key">insert</div>
+            <div class="key">delete</div>
+            <div class="key">Enter</div>
+            <div class="key">0</div>
         </div>
     </div>
 </body>
