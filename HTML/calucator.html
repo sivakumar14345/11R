@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calucator</title>
+    <style>
+        .parent{
+            display: grid;
+            width: 400px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: 80px;
+            
+        }
+        .child{
+            border: 2px solid black;
+        }
+        .zerotop{
+            grid-column-start: 1 ;
+            grid-column-end: 5;
+            background-color: black;
+            color: white;
+            
+            padding-left: 350px;
+            font-size: 70px;
+
+        }
+        .zero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .color{
+            background-color: darkgrey;
+            font-size: 50px;
+        }
+        .or{
+            background-color: orange;
+            font-size: 50px;
+            
+        }
+        .lg{
+            background-color: lightgray;
+            font-size: 50px;
+        }
+        .wh{
+            background-color: white;
+            font-size: 50px;
+            padding-left: 10px;
+        }
+        .lg:hover{
+            transform: scale(1.1);
+            background-color: red;
+        }
+        .color:hover{
+            background-color: rgb(4, 255, 0);
+            transform: scale(1.1);
+
+        }
+        .wh:hover{
+            background-color: aquamarine;
+            transform: scale(1.1);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child zerotop">0</div>
+        <button class="child color">Ac</button>
+        <button class="child color">+/-</button>
+        <button class="child color">%</button>
+        <button class="child or">/</button>
+        <button class="child lg">7</button>
+        <button class="child lg">8</button>
+        <button class="child lg">9</button>
+        <button class="child or" >*</button>
+        <button class="child lg">4</button>
+        <button class="child lg">5</button>
+        <button class="child lg">6</button>
+        <button class="child or">-</button>
+        <button class="child lg">1</button>
+        <button class="child lg">2</button>
+        <button class="child lg">3</button>
+        <button class="child or">+</button>
+        <button class="child zero wh">0</button>
+        <button class="child lg">.</button>
+        <button class="child or">=</button>
+    </div>
+
+
+
+
+
+        
+
+        
+
+   
+
+</body>
+</html>
